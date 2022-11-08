@@ -1,0 +1,18 @@
+@import "./src/global-styles/variables";
+@import './src/global-styles/mixins';
+
+.item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: $radius-default;
+  background-color: $background-color-default;
+  box-shadow: $box-shadow-default;
+}
+
+.button_delete {
+  width: 100px;
+  margin-top: 30px;
+  @include button;
+}
